@@ -1,1 +1,3 @@
-# Project-for-Software-Quality-Assurance-CSC-5710-6710-
+# Team Name: Agile Avengers 
+
+# Team Members: Elliott Baker, Lyna Capuano, and Jannatul Fhirdose
