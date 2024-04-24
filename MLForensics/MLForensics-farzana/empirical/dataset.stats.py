@@ -12,6 +12,9 @@ from datetime import datetime
 import subprocess
 from collections import Counter 
 import shutil 
+import logging
+
+logging.basicConfig(filename='ml_forensics.log', level=1)
 
 def getBranch(path):
     dict_ = { 
@@ -116,7 +119,7 @@ def getAllCommits(all_repos):
         tracker += 1 
         branchName = getBranch(repo_) 
         print(tracker, repo_)  
-        print(the_tuple) 
+        # print(the_tuple) 
         dev_cnt, com_cnt, _days = getDevDayCommits(repo_, branchName)  
         per_repo_min_day        = min(_days) 
         per_repo_max_day        = max(_days)   
@@ -140,7 +143,14 @@ def getAllFileCount(df_):
     tot_fil_size = 0 
     file_names_ =  np.unique( df_['FILE_FULL_PATH'].tolist() )
     for file_ in file_names_:
-        tot_fil_size = tot_fil_size + getFileLength( file_ )
+        try :
+            tot_fil_size = tot_fil_size + getFileLength( file_ )
+        except Exception as e: 
+            # Log file read issues 
+            logging.error(f"Error reading file {file_}: {str(e)}")
+    
+    logging.info(f"Total file size: {tot_fil_size}, File count: {len(file_names_)}")
+
     return tot_fil_size, len( file_names_ ) 
 
 
@@ -223,10 +233,9 @@ def cleanAllButPy(dir_name):
 
 
 if __name__=='__main__':
-    MODEL_ZOO_RESULTS_FILE = '/Users/arahman/Documents/OneDriveWingUp/OneDrive-TennesseeTechUniversity/Research/VulnStrategyMining/ForensicsinML/Output/V5_OUTPUT_MODELZOO.csv'
-    GITLAB_RESULTS_FILE    = '/Users/arahman/Documents/OneDriveWingUp/OneDrive-TennesseeTechUniversity/Research/VulnStrategyMining/ForensicsinML/Output/V5_OUTPUT_GITLAB.csv'
-    GITHUB_RESULTS_FILE    = '/Users/arahman/Documents/OneDriveWingUp/OneDrive-TennesseeTechUniversity/Research/VulnStrategyMining/ForensicsinML/Output/V5_OUTPUT_GITHUB.csv'
-
+    MODEL_ZOO_RESULTS_FILE = '/home/elliott/AGILEAVENGERS-SPRING2024-SQA/output.csv'
+    GITLAB_RESULTS_FILE    = '/home/elliott/AGILEAVENGERS-SPRING2024-SQA/output.csv'
+    GITHUB_RESULTS_FILE    = '/home/elliott/AGILEAVENGERS-SPRING2024-SQA/output.csv'
     all_datasets = [GITHUB_RESULTS_FILE ] 
 
     

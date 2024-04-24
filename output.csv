@@ -1,0 +1,12 @@
+REPO_FULL_PATH,FILE_FULL_PATH,DATA_LOAD_COUNT,MODEL_LOAD_COUNT,DATA_DOWNLOAD_COUNT,MODEL_LABEL_COUNT,MODEL_OUTPUT_COUNT,DATA_PIPELINE_COUNT,ENVIRONMENT_COUNT,STATE_OBSERVE_COUNT,TOTAL_EVENT_COUNT
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/FAME-ML/constants.py,0,0,0,0,0,0,0,0,0
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/FAME-ML/lint_engine.py,0,0,0,0,0,0,0,0,0
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/FAME-ML/main.py,0,0,0,0,0,0,0,0,0
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/FAME-ML/py_parser.py,2,0,0,0,0,0,0,0,2
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/empirical/dataset.stats.py,3,0,0,0,0,0,0,0,3
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/empirical/frequency.py,3,0,0,0,0,0,0,0,3
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/empirical/report.py,2,0,0,0,0,0,0,0,2
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/mining/constants.py,0,0,0,0,0,0,0,0,0
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/mining/git.repo.miner.py,3,0,0,0,0,0,0,0,3
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/mining/log.op.miner.py,3,0,0,0,0,0,0,0,3
+/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics,/home/elliott/AGILEAVENGERS-SPRING2024-SQA/MLForensics/MLForensics-farzana/mining/mining.py,3,0,0,0,0,0,0,0,3
