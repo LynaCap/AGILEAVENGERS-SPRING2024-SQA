@@ -12,6 +12,8 @@ import os
 import pandas as pd
 import py_parser 
 import numpy as np 
+import logging
+logger = logging.getLogger(__name__)
 
 
 def giveTimeStamp():
@@ -180,12 +182,12 @@ if __name__=='__main__':
 		if(os.path.exists( dir_path ) ):
 			repo_dir    = dir_path 
 			output_file = dir_path.split('/')[-2]
-			output_csv = '/Users/arahman/Documents/OneDriveWingUp/OneDrive-TennesseeTechUniversity/Research/VulnStrategyMining/ForensicsinML/Output/V5_' + output_file + '.csv'
+			output_csv = '/home/elliott/AGILEAVENGERS-SPRING2024-SQA/output' + output_file + '.csv'
 			full_dict  = runFameML(repo_dir, output_csv)
 	else: 
-		repo_dir   = '/Users/arahman/FSE2021_ML_REPOS/GITHUB_REPOS/'
-		output_csv = '/Users/arahman/Documents/OneDriveWingUp/OneDrive-TennesseeTechUniversity/Research/VulnStrategyMining/ForensicsinML/Output/V5_OUTPUT_GITHUB.csv'
-		full_dict  = runFameML(repo_dir, output_csv)
+		repo_dir   = '/home/elliott/AGILEAVENGERS-SPRING2024-SQA/'
+		output_csv = '/home/elliott/AGILEAVENGERS-SPRING2024-SQA/output.csv'
+		full_dict = runFameML(repo_dir, output_csv)
 
 		# repo_dir   = '/Users/arahman/FSE2021_ML_REPOS/GITLAB_REPOS/'
 		# output_csv = '/Users/arahman/Documents/OneDriveWingUp/OneDrive-TennesseeTechUniversity/Research/VulnStrategyMining/ForensicsinML/Output/V5_OUTPUT_GITLAB.csv'
