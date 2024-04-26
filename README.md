@@ -5,8 +5,8 @@
 
 4.a. Create a Git Hook that will run and report all security weaknesses in the project in a CSV file whenever a Python file is changed and committed. (20%)
 
-    - Went to  .git/hooks/ in the repository
-    - Rann cp pre-commit.sample pre-commit
+    - Went to .git/hooks/ in the repository
+    - Ran cp pre-commit.sample pre-commit
     - Opened pre-commit
     - Edited pre-commit to run bandit and add found security weaknesses to a csv file
     
