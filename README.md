@@ -9,11 +9,14 @@
     - Rann cp pre-commit.sample pre-commit
     - Opened pre-commit
     - Edited pre-commit to run bandit and add found security weaknesses to a csv file
-
+    
+Code Changed in pre-commit file: 
 <img width="465" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/cfc97710-1cc5-4335-820f-8cfcd0c1bd2a">
 
+Terminal Output after committing a change:
 <img width="468" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/3385b7f1-de4d-415d-b83b-0c5fda573e44">
 
+CSV file created:
 <img width="468" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/acd158e0-362b-4b3f-b2e0-54d7c3f93f5d">
 
 
