@@ -20,6 +20,9 @@ CSV file created:
 <img width="468" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/acd158e0-362b-4b3f-b2e0-54d7c3f93f5d">
 
 
+Lessons Learned: Learned how to build a Git Hook to help automatically identify security weaknesses. Also learned about the tools that can be used to identify security weaknesses.
+
+
 
 4.b. Create a fuzz.py file that will automatically fuzz 5 Python methods of your choice. Report any bugs you discovered by the fuzz.py file. fuzz.py will be automatically executed from GitHub actions. (20%)
 
