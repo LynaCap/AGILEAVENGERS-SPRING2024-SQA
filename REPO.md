@@ -31,10 +31,14 @@ Lessons Learned: Learned how to build a Git Hook to help automatically identify 
 4.d. Integrate continuous integration with GitHub Actions. (20%)
 
     - Added codacy-analysis.yaml file to the repository 
+
+Codacy Analysis CLI:
     
 <img width="468" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/5b504a17-c28a-4393-a44d-cce013fb7494">
 
+
 <img width="468" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/da624da3-8155-494c-ad5a-c3ed95e18f8f">
+
 
 <img width="468" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/52f13b88-e51a-402c-a615-d1e0dff4fdb2">
 
