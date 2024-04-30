@@ -7,6 +7,10 @@ Executes the pattern matching and data flow analysis
 
 import py_parser
 import constants 
+import logging 
+
+logging.basicConfig(filename='ml_forensics.log', level=logging.INFO)
+
 
 def getDataLoadCount( py_file ):
     data_load_count = 0 
@@ -125,6 +129,8 @@ def getDataLoadCount( py_file ):
     # this will be used to check if the file_name passed in as file to read, is logged  
     LOGGING_IS_ON_FLAG = py_parser.checkLoggingPerData( py_tree, constants.DUMMY_LOG_KW ) 
     # print(LOGGING_IS_ON_FLAG, data_load_count) 
+    logging.info(f"Data load count for {py_file}: {data_load_count}")
+
     return data_load_count 
     
     

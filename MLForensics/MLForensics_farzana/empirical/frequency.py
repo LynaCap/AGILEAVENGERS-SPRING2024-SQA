@@ -8,6 +8,7 @@ import os
 import pandas as pd 
 import time 
 import datetime 
+import logging
 
 def giveTimeStamp():
   tsObj = time.time()
@@ -37,6 +38,7 @@ def reportProportion( res_file, output_file ):
         repo_entity = res_df[res_df['REPO_FULL_PATH'] == repo ]           
         all_py_files   = np.unique( repo_entity['FILE_FULL_PATH'].tolist() )
         for field in fields2explore:
+            logging.info(f"CATEGORY: {field}, PROP_VAL: {prop_metric}")
             field_atleast_one_df = repo_entity[repo_entity[field] > 0 ]
             atleast_one_files    = np.unique( field_atleast_one_df['FILE_FULL_PATH'].tolist() )
             prop_metric          = round(float(len( atleast_one_files ) )/float(len(all_py_files)) , 5) * 100
@@ -69,6 +71,7 @@ def reportEventDensity(res_file, output_file):
   
   
         for field in fields2explore:
+            logging.info(f"CATEGORY: {field}, EVENT_DENSITY: {event_density}")
             field_res_list  = repo_entity[field].tolist() 
             field_res_count = sum( field_res_list ) 
             event_density   = round( float(field_res_count * 1000 ) / float(all_py_size)  , 5) 
