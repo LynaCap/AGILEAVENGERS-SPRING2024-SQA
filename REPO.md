@@ -38,6 +38,7 @@ Codacy Analysis CLI:
 
 
 Run Codacy Analysis CLI:
+
 <img width="468" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/da624da3-8155-494c-ad5a-c3ed95e18f8f">
 
 
