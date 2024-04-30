@@ -26,6 +26,17 @@ Lessons Learned: Learned how to build a Git Hook to help automatically identify 
 
 4.b. Create a fuzz.py file that will automatically fuzz 5 Python methods of your choice. Report any bugs you discovered by the fuzz.py file. fuzz.py will be automatically executed from GitHub actions. (20%)
 
+##Activities Performed
+###Fuzz Test Creation:
+Method Selection: Identified critical methods within the project that were suitable candidates for fuzz testing based on their complexity and exposure to potential bugs.
+Fuzz Test Implementation: Developed a fuzz.py script using the Hypothesis library, which is designed to automatically generate test inputs to simulate edge cases and unexpected conditions. Selected methods from different modules like py_parser.py and lint_engine were targeted.
+###GitHub Actions Workflow Setup:
+Automation Script: Created a YAML file for a GitHub Actions workflow named fuzzing.yml, which defines the steps to install dependencies, set the appropriate environment variables, and execute the fuzz.py script upon every push and pull request to the feature/fuzzing branch.
+Environment Configuration: Configured PYTHONPATH in the GitHub Actions workflow to ensure that the testing environment correctly mirrors the local development setup, allowing imports and modules to be located without errors.
+###Execution and Monitoring:
+Continuous Integration: Monitored the execution of the fuzz tests through GitHub Actions, adjusting configurations as necessary to handle failures and ensure reliable execution.
+Results Review: Checked logs and outcomes from the GitHub Actions runs to verify that the fuzz tests were performing as expected, catching errors, and generating reports.
+
 4.c. Integrate forensics by modifying 5 Python methods of your choice. (20%)
 
 4.d. Integrate continuous integration with GitHub Actions. (20%)
