@@ -9,6 +9,9 @@ import pandas as pd
 import time 
 import datetime 
 import statistics
+import logging
+
+logging.basicConfig(filename='ml_forensics.log', level=logging.INFO)
 
 
 def giveTimeStamp():
@@ -37,7 +40,11 @@ def reportProp( res_file ):
         print('-'*50)     
         median_prop_metric = Median(prop_val_list)        
         print('CATEGORY:{}, MEDIAN_PROP_VAL:{}'.format( field, median_prop_metric  ))
-        print('-'*50)          
+        print('-'*50)    
+
+        # Log the average and median proportion metrics for each category
+        logging.info(f"CATEGORY: {field}, AVG_PROP_VAL: {average_prop_metric}")
+        logging.info(f"CATEGORY: {field}, MEDIAN_PROP_VAL: {median_prop_metric}")      
     
     
 def reportDensity( res_file ):
@@ -54,7 +61,11 @@ def reportDensity( res_file ):
         print('-'*50)     
         median_density_metric = Median(density_val_list)        
         print('CATEGORY:{}, MEDIAN_PROP_VAL:{}'.format( field, median_density_metric  ))
-        print('-'*50) 
+        print('-'*50)
+
+        # Log the average and median density metrics for each category
+        logging.info(f"CATEGORY: {field}, AVG_DENSITY_VAL: {average_density_metric}")
+        logging.info(f"CATEGORY: {field}, MEDIAN_DENSITY_VAL: {median_density_metric}") 
         
             
 if __name__=='__main__': 
