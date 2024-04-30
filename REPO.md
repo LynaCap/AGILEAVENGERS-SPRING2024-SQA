@@ -45,3 +45,6 @@ Run Codacy Analysis CLI:
 <img width="468" alt="image" src="https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125221326/52f13b88-e51a-402c-a615-d1e0dff4fdb2">
 
 
+Lessons Learned: Learned how to use the Codacy tool to integrate code changes with continuous integration and also check for quality concerns with static analysis. 
+
+
