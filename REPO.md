@@ -31,6 +31,9 @@ Learned how to build a Git Hook to help automatically identify security weakness
 ### Part B
 Create a fuzz.py file that will automatically fuzz 5 Python methods of your choice. Report any bugs you discovered by the fuzz.py file. fuzz.py will be automatically executed from GitHub actions. (20%)
 
+#### Jannatul Fhirdose Mohammad (COMP 6710)
+#### Banner ID: 904301531
+
 #### Errors:
 
 ##### 1. Renamed directories to resolve import errors in fuzz.py
@@ -42,6 +45,9 @@ Create a fuzz.py file that will automatically fuzz 5 Python methods of your choi
 ##### import constants
 ##### ModuleNotFoundError: No module named 'constants'
 ##### The error message indicates that the constants module is not found. Resolved this using PYTHONPATH
+![Screenshot (88)](https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125159697/cdc9d446-24f4-4f93-ae5a-31e19351f2c9)
+![Screenshot (89)](https://github.com/LynaCap/AGILEAVENGERS-SPRING2024-SQA/assets/125159697/09c92bf8-a0f5-44a4-9f44-0065d7b82a47)
+
 
 #### Choice of Python Methods:
 
